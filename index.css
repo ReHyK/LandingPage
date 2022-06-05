@@ -1,0 +1,113 @@
+@font-face {
+    font-family: 'nose';
+    src: url(/Fonts/Prompt-Bold.ttf);
+}
+
+body {
+    background: white; /*#B3B8BB color gris*/
+    padding: 0;
+    margin: 0;
+    margin-right: 0;
+    margin-left: 0;
+    font-family: 'nose';
+    color: white;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+nav {
+    width: 30%;
+}
+
+.list {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    font-family: 'nose';
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.logo {
+    height: 70px;
+    width: 50px;
+    object-fit: cover;  
+}
+
+header {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color:black ;
+}
+
+.section-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: red;
+}
+
+.section-1 {
+    width: 50%;
+    margin-left: 7%;
+}
+
+.section-1 h1 {
+    font-size: 3em;
+    text-transform: uppercase;
+}
+
+.section-1 p {
+    font-size: 2.3em;
+    width: 40%;
+    height: 20%;
+    font-family: 'nose';
+}
+
+.equipos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 35%;
+    width: 35%;
+    margin-right: 4%;
+}
+
+.section-header-2 {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+}
+
+.section-2 {
+    margin-left: 3%;
+}
+
+.section-2 h2 {
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+.section-2-1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 3%;
+}
+
+.juegos {
+    height: 15%;
+    width: 15%;
+}
