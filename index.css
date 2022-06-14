@@ -1,6 +1,16 @@
 @font-face {
     font-family: 'nose';
-    src: url(/Fonts/Prompt-Bold.ttf);
+    src: url(./Fonts/Prompt-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'batman';
+    src: url(./Fonts/batmfa__.ttf);
+}
+
+@font-face {
+    font-family: 'russo';
+    src: url(./Fonts/RussoOne-Regular.ttf);
 }
 
 body {
@@ -9,7 +19,7 @@ body {
     margin: 0;
     margin-right: 0;
     margin-left: 0;
-    font-family: 'nose';
+    font-family: 'russo';
     color: white;
     background-size: cover;
     background-repeat: no-repeat;
@@ -26,11 +36,15 @@ nav {
     justify-content: space-between;
     padding: 0;
     margin: 0;
-    font-family: 'nose';
+    font-family: 'batman';
+    
+}
+
+.listo:hover {
+    transition: color.2s ease-in-out;
 }
 
 a {
-    color: white;
     text-decoration: none;
     text-transform: uppercase;
 }
@@ -56,23 +70,27 @@ header {
     justify-content: space-around;
     align-items: center;
     background-color: red;
+    border-top: 3px solid grey;
+    border-bottom: 3px solid grey;
 }
 
 .section-1 {
-    width: 50%;
+    width: 70%;
     margin-left: 7%;
 }
 
 .section-1 h1 {
-    font-size: 3em;
+    font-size: 4em;
     text-transform: uppercase;
+    font-family: 'batman';
+    color: aqua;
 }
 
 .section-1 p {
     font-size: 2.3em;
-    width: 40%;
+    width: 80%;
     height: 20%;
-    font-family: 'nose';
+    font-family: 'russo';
 }
 
 .equipos {
@@ -86,28 +104,127 @@ header {
 
 .section-header-2 {
     width: 100%;
-    justify-content: space-between;
+    display: flex;
+    justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
     background-color: black;
 }
 
 .section-2 {
     margin-left: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: aqua;
 }
 
 .section-2 h2 {
-    font-size: 2em;
+    font-size: 4em;
     text-transform: uppercase;
+    font-family: 'batman';
+}
+
+.section-2-1 p {
+    font-size: 2.5em;
+    width: 60%;
+    font-family: 'russo';
+    margin-right: 1%;
+    margin-bottom: 6%;
 }
 
 .section-2-1 {
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    flex-direction: row-reverse;
+    border-bottom: 3px solid grey;
+    
+}
+
+.section-header-3 {
+    width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-bottom: 3%;
+    flex-wrap: wrap;
+    background-color: #323232;
+    
 }
 
-.juegos {
-    height: 15%;
-    width: 15%;
+.section-3 {
+    margin-left: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: aqua;
+}
+
+.section-3 h2 {
+    font-size: 2em;
+    text-transform: uppercase;
+    font-family: 'batman';
+}
+
+.section-3-info {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.section-3-info-img {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.mayus {
+    text-transform: uppercase;
+}
+
+.centro {
+    text-align: center;
+}
+
+.section-header-4 {
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    border-top: 3px solid grey;
+    background-color: black;
+}
+
+.section-4 h2 {
+    text-transform: uppercase;
+    font-family: 'batman';
+    margin-left: 2%;
+}
+
+.container-card {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 20%;
+}
+
+.card img {
+    width: 70%;
+    border-radius: 30px;
+}
+
+.card img:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
 }
