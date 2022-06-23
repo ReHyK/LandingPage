@@ -13,6 +13,10 @@
     src: url(./Fonts/RussoOne-Regular.ttf);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background: black; /*#B3B8BB color gris*/
     padding: 0;
@@ -40,7 +44,7 @@ nav {
     
 }
 
-.listo:hover {
+.list:hover {
     transition: color.2s ease-in-out;
 }
 
@@ -56,15 +60,16 @@ a {
 }
 
 header {
-    display: flex;
     width: 100%;
+    display: flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
     background-color:black ;
+    position: fixed;
 }
 
-.section-header {
+.section-hd {
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -102,7 +107,7 @@ header {
     margin-right: 4%;
 }
 
-.section-header-2 {
+.section-hd-2 {
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -142,7 +147,7 @@ header {
     
 }
 
-.section-header-3 {
+.section-hd-3 {
     width: 100%;
     display: flex;
     justify-content: space-around;
@@ -175,7 +180,7 @@ header {
     margin-top: 30px;
 }
 
-.section-3-info-img {
+.section-3-in-img {
     width: 25%;
     display: flex;
     justify-content: center;
@@ -192,13 +197,14 @@ header {
     text-align: center;
 }
 
-.section-header-4 {
+.section-hd-4 {
     width: 100%;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
     border-top: 3px solid grey;
     background-color: black;
+    margin-bottom: 2%;
 }
 
 .section-4 h2 {
@@ -209,7 +215,7 @@ header {
 
 .container-card {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     width: 100%;
     align-items: center;
     flex-wrap: wrap;
@@ -227,4 +233,48 @@ header {
 .card img:hover {
     transform: scale(1.1);
     transition: 0.5s;
+}
+
+.footer {
+    width: 100%;
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #323232;
+    border-top: 3px solid grey;
+}
+
+.copy {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.terminos {
+    list-style: none;
+}
+
+.logo1 {
+    width: 100px;
+    height: 100px;
+}
+
+@media (max-width: 1440px) {
+    .section-1 h1 {
+        font-size: 3em;
+        margin-top: 15%;
+    }
+
+    .equipos {
+        margin-top: 5%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .list {
+        width: 110%;
+        justify-content: flex-start;
+        display: inline;
+    }
 }
